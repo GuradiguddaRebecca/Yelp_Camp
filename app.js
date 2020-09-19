@@ -18,8 +18,11 @@ var commentRoutes = require("./routes/comments"),
 const mongoose = require('mongoose');
 
 
+// mongoose
+//   .connect('mongodb://127.0.0.1:27017/yelp_camp',
 mongoose
-  .connect('mongodb://127.0.0.1:27017/yelp_camp', {
+  .connect('mongodb+srv://Solomonrebecca:Rebecca123@yelp-camp.xwgxp.mongodb.net/Solomonrebecca?retryWrites=true&w=majority',
+   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true
